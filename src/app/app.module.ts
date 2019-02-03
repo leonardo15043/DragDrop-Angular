@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { DragComponent } from './drag/drag.component';
 
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { HttpClientModule } from '@angular/common/http';
+import { PaisesComponent } from './paises/paises.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DragComponent
+    DragComponent,
+    PaisesComponent
   ],
   imports: [
     BrowserModule,
-    DragDropModule
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
